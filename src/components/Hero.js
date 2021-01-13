@@ -1,12 +1,8 @@
-const Hero = () => (
+const Hero = ({title, children}) => (
   <div>
     <div>
-      <h1>Adquira conhecimento e se aprimore cada vez mais</h1>
-      <ul>
-        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. N</li>
-        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. N</li>
-        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. N</li>
-      </ul>
+      <h1>{title}</h1>
+      {children}
       <button>Matricule-se agora</button>
     </div>
   </div>
