@@ -1,16 +1,23 @@
-# EditorConfig is awesome: https://EditorConfig.org
-
-# top-most EditorConfig file
-root = true
-
-# Unix-style newlines with a newline ending every file
 [*]
-end_of_line = lf
-insert_final_newline = true
-
-# Matches multiple files with brace expansion notation
-# Set default charset
-[*.{js}]
-charset = utf-8
-indent_style = space
-indent_size = 2
+4indent_style = space
+5indent_size = 2
+6
+7end_of_line = lf
+8charset = utf-8
+9trim_trailing_whitespace = true
+10insert_final_newline = true
+11
+12[*.md]
+13trim_trailing_whitespace = false
+14
+15[{package,bower}.json]
+16indent_style = space
+17indent_size = 2
+18
+19[{.eslintrc,.scss-lint.yml}]
+20indent_style = space
+21indent_size = 2
+22
+23[*.{scss,sass}]
+24indent_style = space
+25indent_size = 2
