@@ -16,7 +16,12 @@ export const usage = () => (
 
 export const withList = () => (
   <Hero
-    title="Adquira conhecimento e se aprimore cada vez mais"
+    title={
+      <span>
+        Adquira <strong>conhecimento</strong>
+        <br />e se aprimore cada vez mais
+      </span>
+    }
     image={WritterBg}
   >
     <ul>
