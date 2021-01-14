@@ -19,5 +19,6 @@ module.exports = {
     "react/button-has-type": "off",
     "react/prop-types": "off",
     "react/no-unescaped-entities": "off",
+    "react/require-default-props": "off",
   },
 };
