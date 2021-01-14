@@ -18,5 +18,6 @@ module.exports = {
     "react/react-in-jsx-scope": "off",
     "react/button-has-type": "off",
     "react/prop-types": "off",
+    "react/no-unescaped-entities": "off",
   },
 };
