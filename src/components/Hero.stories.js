@@ -1,7 +1,7 @@
-import Heading from "../components/Heading";
-import Hero from "../components/Hero";
-import NotebookBg from "./assets/notebook-bg.jpg";
-import WritterBg from "./assets/writer-bg.jpg";
+import Heading from "./Heading";
+import Hero from "./Hero";
+import NotebookBg from "../stories/assets/notebook-bg.jpg";
+import WritterBg from "../stories/assets/writer-bg.jpg";
 
 export default {
   title: "Hero",
