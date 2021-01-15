@@ -1,3 +1,5 @@
+import { text } from "@storybook/addon-knobs";
+
 import Heading from "./Heading";
 import Hero from "./Hero";
 import NotebookBg from "../stories/assets/notebook-bg.jpg";
@@ -10,7 +12,8 @@ export default {
 
 export const usage = () => (
   <Hero image={NotebookBg}>
-    <h1>Adquira conhecimento e se aprimore cada vez mais</h1>
+    <h1>{text("Title", "Adquira conhecimento e se aprimore cada vez mais")}</h1>
+    <p>{text("Text", "Cursos de Qualidade ao alcance do seu bolso")}</p>
   </Hero>
 );
 

@@ -55,7 +55,6 @@ const Hero = ({ image, children }) => (
   <Root image={image}>
     <Container>
       <Content>{children}</Content>
-      <button>Matricule-se agora</button>
     </Container>
   </Root>
 );

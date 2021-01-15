@@ -1,3 +1,4 @@
+import { text } from "@storybook/addon-knobs";
 import Heading from "./Heading";
 
 export default {
@@ -8,27 +9,27 @@ export default {
 export const usage = () => (
   <div>
     <Heading>
-      <h1>Título</h1>
+      <h1>{text("Título 1", "Título 1")}</h1>
     </Heading>
 
     <Heading>
-      <h2>Título</h2>
+      <h2>{text("Título 2", "Título 2")}</h2>
     </Heading>
 
     <Heading>
-      <h3>Título</h3>
+      <h3>{text("Título 3", "Título 3")}</h3>
     </Heading>
 
     <Heading>
-      <h4>Título</h4>
+      <h4>{text("Título 4", "Título 4")}</h4>
     </Heading>
 
     <Heading>
-      <h5>Título</h5>
+      <h5>{text("Título 5", "Título 5")}</h5>
     </Heading>
 
     <Heading>
-      <h6>Título</h6>
+      <h6>{text("Título 6", "Título 6")}</h6>
     </Heading>
   </div>
 );
