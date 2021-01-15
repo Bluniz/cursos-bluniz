@@ -4,7 +4,6 @@ import { BreakpointSizes, breakAt } from "./Breakpoints";
 
 const GlobalStyle = createGlobalStyle`
 html{
-  @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;1,200&display=swap");
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 100%;
