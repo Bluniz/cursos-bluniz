@@ -20,5 +20,6 @@ module.exports = {
     "react/prop-types": "off",
     "react/no-unescaped-entities": "off",
     "react/require-default-props": "off",
+    "import/no-unresolved": "off",
   },
 };

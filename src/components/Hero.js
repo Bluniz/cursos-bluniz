@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
-import { breakAt, BreakpointSize } from "./Breakpoints";
+import { breakAt, BreakpointSize } from "styles/Breakpoints";
 
 const colorYellow = "#ffc107";
 
