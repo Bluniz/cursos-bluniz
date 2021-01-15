@@ -4,7 +4,7 @@ import NotebookBg from "../stories/assets/notebook-bg.jpg";
 import WritterBg from "../stories/assets/writer-bg.jpg";
 
 export default {
-  title: "Hero",
+  title: "Components/Hero",
   component: Hero,
 };
 

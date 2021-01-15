@@ -1,5 +1,5 @@
 export default {
-  title: "Welcome ",
+  title: "Introduction/Welcome",
 };
 
 export const toBlunizCourses = () => (
