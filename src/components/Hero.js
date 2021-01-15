@@ -15,27 +15,6 @@ const Root = styled.div`
     background-blend-mode: overlay;
   `}
 `;
-/* const Title = styled.h1`
-  font-weight: 700;
-  letter-spacing: 2px;
-  position: relative;
-  margin-bottom: 25px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  font-size: 2.5rem;
-
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -3px;
-    background-color: ${colorYellow};
-    height: 5px;
-    width: 70px;
-  }
-
-  
-`; */
 
 const Content = styled.div`
   p,
@@ -72,7 +51,7 @@ const Container = styled.div`
   }
 `;
 
-const Hero = ({ image, title, children }) => (
+const Hero = ({ image, children }) => (
   <Root image={image}>
     <Container>
       <Content>{children}</Content>
@@ -82,7 +61,7 @@ const Hero = ({ image, title, children }) => (
 );
 
 Hero.propTypes = {
-  title: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
+  image: PropTypes.string,
   children: PropTypes.node,
 };
 

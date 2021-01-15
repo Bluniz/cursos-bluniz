@@ -1,0 +1,32 @@
+import styled from "styled-components";
+
+const Heading = styled.div`
+  font-weight: 700;
+  letter-spacing: 2px;
+  position: relative;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 2.5rem;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    background-color: #ffc107;
+    height: 5px;
+    width: 70px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0;
+  }
+`;
+
+export default Heading;
