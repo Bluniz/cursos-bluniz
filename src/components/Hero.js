@@ -15,7 +15,7 @@ const Root = styled.div`
     background-blend-mode: overlay;
   `}
 `;
-const Title = styled.h1`
+/* const Title = styled.h1`
   font-weight: 700;
   letter-spacing: 2px;
   position: relative;
@@ -34,10 +34,8 @@ const Title = styled.h1`
     width: 70px;
   }
 
-  strong {
-    color: ${colorYellow};
-  }
-`;
+  
+`; */
 
 const Content = styled.div`
   p,
@@ -77,7 +75,6 @@ const Container = styled.div`
 const Hero = ({ image, title, children }) => (
   <Root image={image}>
     <Container>
-      <Title>{title}</Title>
       <Content>{children}</Content>
       <button>Matricule-se agora</button>
     </Container>
@@ -85,7 +82,6 @@ const Hero = ({ image, title, children }) => (
 );
 
 Hero.propTypes = {
-  image: PropTypes.string,
   title: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
   children: PropTypes.node,
 };

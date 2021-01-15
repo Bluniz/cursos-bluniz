@@ -8,22 +8,17 @@ export default {
 };
 
 export const usage = () => (
-  <Hero
-    title="Adquira conhecimento e se aprimore cada vez mais"
-    image={NotebookBg}
-  />
+  <Hero image={NotebookBg}>
+    <h1>Adquira conhecimento e se aprimore cada vez mais</h1>
+  </Hero>
 );
 
 export const withList = () => (
-  <Hero
-    title={
-      <span>
-        Adquira <strong>conhecimento</strong>
-        <br />e se aprimore cada vez mais
-      </span>
-    }
-    image={WritterBg}
-  >
+  <Hero image={WritterBg}>
+    <h1>
+      Adquira <strong>conhecimento</strong>
+      <br />e se aprimore cada vez mais
+    </h1>
     <ul>
       <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. N</li>
       <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. N</li>
