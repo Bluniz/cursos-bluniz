@@ -41,3 +41,32 @@ export const usage = () => (
     </Toolbar>
   </div>
 );
+
+export const outlined = () => (
+  <div>
+    <p>Enabled:</p>
+    <Toolbar>
+      <Button variant="outlined" {...events}>
+        Default
+      </Button>
+      <Button variant="outlined" color="primary" {...events}>
+        Primary
+      </Button>
+      <Button variant="outlined" color="danger" {...events}>
+        Danger
+      </Button>
+    </Toolbar>
+    <p>Disabled:</p>
+    <Toolbar>
+      <Button variant="outlined" {...events} disabled>
+        Default
+      </Button>
+      <Button variant="outlined" color="primary" {...events} disabled>
+        Primary
+      </Button>
+      <Button variant="outlined" color="danger" {...events} disabled>
+        Danger
+      </Button>
+    </Toolbar>
+  </div>
+);
