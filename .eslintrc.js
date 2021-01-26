@@ -22,5 +22,6 @@ module.exports = {
     "react/require-default-props": "off",
     "import/no-unresolved": "off",
     "no-undef": "off",
+    "react/jsx-props-no-spreading": "off",
   },
 };

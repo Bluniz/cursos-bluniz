@@ -1,8 +1,24 @@
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-const getPrimaryColor = (props) => props.theme.colors.primary.main;
-const getPrimaryText = (props) => props.theme.colors.text;
+const ButtonColors = {
+  default: "default",
+  primary: "primary",
+  danger: "danger",
+};
+const getMainColor = ({ theme, color }) => {
+  switch (color) {
+    case ButtonColors.default:
+      return theme.colors.primary.main;
+
+    case ButtonColors.danger:
+      return theme.colors.danger.main;
+
+    default:
+      return "#e0e0e0";
+  }
+};
+const getColorText = (props) => props.theme.colors.text;
 
 const Button = styled.button`
   font-size: 1rem;
@@ -10,19 +26,23 @@ const Button = styled.button`
   text-transform: uppercase;
   padding: 12px 36px;
   cursor: pointer;
-  background-color: ${getPrimaryColor};
-  border: 2px solid ${getPrimaryColor};
-  color: ${getPrimaryText};
+  background-color: ${getMainColor};
+  border: 2px solid ${getMainColor};
+  color: ${getColorText};
 `;
 
-Button.defaultProps = {
+const ButtonWrapper = (props) => <Button {...props} />;
+
+ButtonWrapper.defaultProps = {
   type: "button",
   children: undefined,
+  color: "default",
 };
 
-Button.prototypes = {
+ButtonWrapper.propTypes = {
   type: PropTypes.string,
   children: PropTypes.node,
+  color: PropTypes.oneOf(Object.values(ButtonColors)),
 };
 
-export default Button;
+export default ButtonWrapper;
