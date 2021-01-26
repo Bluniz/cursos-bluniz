@@ -7,8 +7,8 @@ const Button = styled.button`
   text-transform: uppercase;
   padding: 12px 36px;
   cursor: pointer;
-  background-color: #ffc107;
-  border: 2px solid #ffc107;
+  background-color: ${(props) => props.theme.colorYellow};
+  border: 2px solid ${(props) => props.theme.colorYellow};
   color: #212121;
 `;
 
