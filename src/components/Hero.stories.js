@@ -4,6 +4,7 @@ import Heading from "./Heading";
 import Hero from "./Hero";
 import NotebookBg from "../stories/assets/notebook-bg.jpg";
 import WritterBg from "../stories/assets/writer-bg.jpg";
+import Button from "./Button";
 
 export default {
   title: "Components/Hero",
@@ -31,5 +32,8 @@ export const withList = () => (
       <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. N</li>
       <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. N</li>
     </ul>
+    <Button variant="outlined" color="primary">
+      Matricule-se agora
+    </Button>
   </Hero>
 );

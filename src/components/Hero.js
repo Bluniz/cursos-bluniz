@@ -47,7 +47,6 @@ const Container = styled.div`
   ${breakAt(BreakpointSizes.lg)} {
     width: 1040px;
     margin: 0 auto;
-    padding: 0;
   }
 `;
 
