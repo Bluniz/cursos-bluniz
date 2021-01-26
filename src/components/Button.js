@@ -18,6 +18,19 @@ const getMainColor = ({ theme, color }) => {
       return "#e0e0e0";
   }
 };
+
+const getDarkColor = ({ theme, color }) => {
+  switch (color) {
+    case ButtonColors.default:
+      return theme.colors.primary.dark;
+
+    case ButtonColors.danger:
+      return theme.colors.danger.dark;
+
+    default:
+      return "#5a6268";
+  }
+};
 const getColorText = (props) => props.theme.colors.text;
 
 const Button = styled.button`
@@ -29,6 +42,16 @@ const Button = styled.button`
   background-color: ${getMainColor};
   border: 2px solid ${getMainColor};
   color: ${getColorText};
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  &:hover:enabled {
+    background-color: ${getDarkColor};
+    border-color: ${getDarkColor};
+  }
 `;
 
 const ButtonWrapper = (props) => <Button {...props} />;
