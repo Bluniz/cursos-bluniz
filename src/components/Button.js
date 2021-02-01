@@ -41,7 +41,16 @@ const getDarkColor = ({ theme, color }) => {
       return "#5a6268";
   }
 };
-const getColorText = (props) => props.theme.colors.text;
+const getColorText = ({theme, color}) => {
+  switch (color) {
+    case ButtonColors.primary:
+      return theme.colors.primary.text;
+    case ButtonColors.danger:
+      return theme.colors.danger.text
+    default:
+      return "#212121"
+  }
+}
 
 const getOutlinedText = (props) => {
   if (props.color === ButtonColors.default) {

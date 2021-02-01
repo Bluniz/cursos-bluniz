@@ -7,7 +7,7 @@ export default {
   component: Button,
 };
 
-const events = actions({ onClick: "clicked" });
+const events = actions({ onClick: "Agra Clicou" });
 
 const Toolbar = styled.div`
   & > * {

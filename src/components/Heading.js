@@ -12,12 +12,14 @@ const Heading = styled.div`
     padding-bottom: 8px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
+    // line left não tem position, tem padding left e cor mais tamanho da borda.
+
     &::after {
       content: "";
       position: absolute;
       left: 0;
       bottom: -3px;
-      background-color: #ffc107;
+      background-color: ${props => props.theme.colors.primary.main};
       height: 5px;
       width: 70px;
     }
