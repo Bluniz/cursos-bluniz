@@ -1,13 +1,13 @@
 import { text } from "@storybook/addon-knobs";
 
-import Heading from "./Heading";
+import Heading from "../atoms/Heading";
 import Hero from "./Hero";
-import NotebookBg from "../stories/assets/notebook-bg.jpg";
-import WritterBg from "../stories/assets/writer-bg.jpg";
-import Button from "./Button";
+import NotebookBg from "../../stories/assets/notebook-bg.jpg";
+import WritterBg from "../../stories/assets/writer-bg.jpg";
+import Button from "../atoms/Button";
 
 export default {
-  title: "Components/Hero",
+  title: "Components/Molecules/Hero",
   component: Hero,
 };
 
