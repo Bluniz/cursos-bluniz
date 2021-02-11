@@ -24,5 +24,6 @@ module.exports = {
     "no-undef": "off",
     "react/jsx-props-no-spreading": "off",
     "no-shadow": "off",
+    "jsx-a11y/media-has-caption": "off",
   },
 };
