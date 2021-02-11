@@ -1,8 +1,6 @@
 import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
-import { breakAt, BreakpointSizes } from "styles/Breakpoints";
-
-
+import Container from "../atoms/Container";
 
 const Root = styled.div`
   color: #fff;
@@ -17,6 +15,7 @@ const Root = styled.div`
 `;
 
 const Content = styled.div`
+  display: inline-block;
   p,
   li {
     font-size: 20px;
@@ -31,22 +30,8 @@ const Content = styled.div`
   li {
     &::before {
       content: "\\2713\\0020";
-      color: ${props => props.theme.colors.primary.main};
+      color: ${(props) => props.theme.colors.primary.main};
     }
-  }
-`;
-
-const Container = styled.div`
-  width: 100%auto;
-  padding: 0 8px;
-
-  ${breakAt(BreakpointSizes.sm)} {
-    padding: 0 16px;
-  }
-
-  ${breakAt(BreakpointSizes.lg)} {
-    width: 1040px;
-    margin: 0 auto;
   }
 `;
 

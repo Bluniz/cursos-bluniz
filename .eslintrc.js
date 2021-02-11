@@ -23,5 +23,6 @@ module.exports = {
     "import/no-unresolved": "off",
     "no-undef": "off",
     "react/jsx-props-no-spreading": "off",
+    "no-shadow": "off",
   },
 };
