@@ -13,6 +13,7 @@ import {
   FaSchool,
 } from "react-icons/fa";
 import Button from "components/atoms/Button";
+import Footer from "components/organisms/Footer";
 import WritterBg from "../../assets/writer-bg.jpg";
 
 const Home = () => (
@@ -81,6 +82,7 @@ const Home = () => (
         </div>
       </Grid>
     </Section>
+    <Footer />
   </>
 );
 
