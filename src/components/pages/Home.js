@@ -4,6 +4,12 @@ import Heading from "components/atoms/Heading";
 import Hero from "components/molecules/Hero";
 import Section from "components/molecules/Section";
 import AboutVideo from "assets/book_pages.mov";
+import ProductGrid from "components/organisms/ProductGrid";
+
+import WebImage from "assets/internet.jpg";
+import JavascriptImage from "assets/javascript.png";
+import ReactImage from "assets/react.png";
+import NextJsImage from "assets/nextJs.png";
 
 // import PropTypes from "prop-types";
 import {
@@ -15,6 +21,33 @@ import {
 import Button from "components/atoms/Button";
 import Footer from "components/organisms/Footer";
 import WritterBg from "../../assets/writer-bg.jpg";
+
+const products = [
+  {
+    id: 1,
+    image: WebImage,
+    title: "Iniciando na Web",
+    summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  },
+  {
+    id: 2,
+    image: JavascriptImage,
+    title: "JavaScript ninja",
+    summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  },
+  {
+    id: 3,
+    image: ReactImage,
+    title: "React do básico ao avançado",
+    summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  },
+  {
+    id: 4,
+    image: NextJsImage,
+    title: "Renderização estática com NextJs",
+    summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  },
+];
 
 const Home = () => (
   <>
@@ -54,6 +87,7 @@ const Home = () => (
     <Section inverse>
       <Heading>
         <h2>Conheça nossos serviços</h2>
+        <ProductGrid products={products} />
       </Heading>
     </Section>
     <Section>
