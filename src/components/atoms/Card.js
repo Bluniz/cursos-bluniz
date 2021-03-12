@@ -46,6 +46,7 @@ CardMedia.propTypes = {
 const Root = styled.div`
   background: #fff;
   border-radius: 4px;
+  overflow: hidden;
 `;
 
 const Card = ({ children }) => <Root>{children}</Root>;
