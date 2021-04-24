@@ -42,11 +42,19 @@ const Body = styled.div`
   padding: 0 16px 16px 16px;
 `;
 
-const Accordion = ({ title, children }) => {
-  const [open, setOpen] = useState(false);
+const Accordion = ({ title, children, onChange, open: pOpen }) => {
+  const [sOpen, setSOpen] = useState(false);
+
+  const isControlled = pOpen !== undefined;
+  const open = isControlled ? pOpen : sOpen;
 
   const handleClick = () => {
-    setOpen(!open);
+    const newState = !open;
+    if (!isControlled) {
+      setSOpen(newState);
+    }
+
+    onChange(newState);
   };
 
   return (
@@ -64,11 +72,15 @@ const Accordion = ({ title, children }) => {
 Accordion.defaultProps = {
   title: undefined,
   children: undefined,
+  open: undefined,
+  onChange: () => {},
 };
 
 Accordion.propTypes = {
   title: PropTypes.string,
   children: PropTypes.node,
+  open: PropTypes.bool,
+  onChange: PropTypes.func,
 };
 
 export default Accordion;

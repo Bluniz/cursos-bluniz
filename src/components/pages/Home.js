@@ -5,6 +5,7 @@ import Hero from "components/molecules/Hero";
 import Section from "components/molecules/Section";
 import AboutVideo from "assets/book_pages.mov";
 import ProductGrid from "components/organisms/ProductGrid";
+import Accordion, { AccordionGroup } from "components/atoms/Accordion";
 
 import WebImage from "assets/internet.jpg";
 import JavascriptImage from "assets/javascript.png";
@@ -91,15 +92,10 @@ const Home = () => (
       </Heading>
     </Section>
     <Section>
-      <Heading>
-        <h2>Bluniz Cursos</h2>
-      </Heading>
-    </Section>
-    <Section inverse>
       <Grid md={2}>
         <div>
           <Heading>
-            <h2>Dúvidas Recorrentes </h2>
+            <h2>Bluniz Cursos</h2>
           </Heading>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit
@@ -107,6 +103,7 @@ const Home = () => (
             laborum accusantium amet dignissimos id ipsa et deleniti
             reprehenderit explicabo quae quaerat est! Unde!
           </p>
+
           <div>
             <Button color="primary">Saiba mais</Button>
           </div>
@@ -115,6 +112,25 @@ const Home = () => (
           <video src={AboutVideo} width="100%" autoPlay loop />
         </div>
       </Grid>
+    </Section>
+    <Section inverse>
+      <Heading>
+        <h2>Dúvidas Recorrentes </h2>
+      </Heading>
+      <AccordionGroup>
+        <Accordion title="Como renovo meu bootcamp?">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint sunt
+          voluptas porro recusandae deleniti re
+        </Accordion>
+        <Accordion title="Como faço a mudança de bootcamp?">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint sunt
+          voluptas porro recusandae deleniti re
+        </Accordion>
+        <Accordion title="Não conclui no periodo, e agora?">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint sunt
+          voluptas porro recusandae deleniti re
+        </Accordion>
+      </AccordionGroup>
     </Section>
     <Footer />
   </>
